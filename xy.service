@@ -1,0 +1,12 @@
+[Unit]
+Description=xy Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/local/xy/
+ExecStart=/usr/local/xy/xy
+
+[Install]
+WantedBy=multi-user.target
