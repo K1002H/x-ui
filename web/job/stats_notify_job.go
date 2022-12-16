@@ -7,9 +7,9 @@ import (
 
 	"time"
 
-	"x-ui/logger"
-	"x-ui/util/common"
-	"x-ui/web/service"
+	"xy/logger"
+	"xy/util/common"
+	"xy/web/service"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
