@@ -17,7 +17,7 @@
 # 安装&升级
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/K1002H/x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/K1002H/xy/master/install.sh)
 ```
 
 ## 手动安装&升级
