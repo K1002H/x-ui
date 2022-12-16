@@ -2,8 +2,8 @@ package model
 
 import (
 	"fmt"
-	"x-ui/util/json_util"
-	"x-ui/xray"
+	"xy/util/json_util"
+	"xy/xray"
 )
 
 type Protocol string
