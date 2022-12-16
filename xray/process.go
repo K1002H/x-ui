@@ -24,7 +24,7 @@ import (
 var trafficRegex = regexp.MustCompile("(inbound|outbound)>>>([^>]+)>>>traffic>>>(downlink|uplink)")
 
 func GetBinaryName() string {
-	return fmt.Sprintf("xray-%s-%s", runtime.GOOS, runtime.GOARCH)
+	return fmt.Sprintf("xy-%s-%s", runtime.GOOS, runtime.GOARCH)
 }
 
 func GetBinaryPath() string {
