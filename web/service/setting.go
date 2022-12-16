@@ -8,13 +8,13 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"x-ui/database"
-	"x-ui/database/model"
-	"x-ui/logger"
-	"x-ui/util/common"
-	"x-ui/util/random"
-	"x-ui/util/reflect_util"
-	"x-ui/web/entity"
+	"xy/database"
+	"xy/database/model"
+	"xy/logger"
+	"xy/util/common"
+	"xy/util/random"
+	"xy/util/reflect_util"
+	"xy/web/entity"
 )
 
 //go:embed config.json
