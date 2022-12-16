@@ -4,7 +4,7 @@ import (
 	"os"
 	"syscall"
 	"time"
-	"x-ui/logger"
+	"xy/logger"
 )
 
 type PanelService struct {
