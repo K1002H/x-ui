@@ -1,4 +1,4 @@
-module x-ui
+module xy
 
 go 1.16
 
