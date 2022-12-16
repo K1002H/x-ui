@@ -113,14 +113,14 @@ install_xy() {
             exit 1
         fi
         echo -e "检测到 xy 最新版本：${last_version}，开始安装"
-        wget -N --no-check-certificate -O /usr/local/xy-linux-${arch}.tar.gz https://github.com/K1002H/xy/releases/download/${last_version}/xy-linux-${arch}.tar.gz
+        wget -N --no-check-certificate -O /usr/local/xy-linux-${arch}.tar.gz https://ghproxy.fovi.tk/https://github.com/K1002H/xy/releases/download/${last_version}/xy-linux-${arch}.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}下载 xy 失败，请确保你的服务器能够下载 Github 的文件${plain}"
             exit 1
         fi
     else
         last_version=$1
-        url="https://github.com/K1002H/xy/releases/download/${last_version}/xy-linux-${arch}.tar.gz"
+        url="https://ghproxy.fovi.tk/https://github.com/K1002H/xy/releases/download/${last_version}/xy-linux-${arch}.tar.gz"
         echo -e "开始安装 xy v$1"
         wget -N --no-check-certificate -O /usr/local/xy-linux-${arch}.tar.gz ${url}
         if [[ $? -ne 0 ]]; then
