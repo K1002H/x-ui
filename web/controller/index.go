@@ -3,10 +3,10 @@ package controller
 import (
 	"net/http"
 	"time"
-	"x-ui/logger"
-	"x-ui/web/job"
-	"x-ui/web/service"
-	"x-ui/web/session"
+	"xy/logger"
+	"xy/web/job"
+	"xy/web/service"
+	"xy/web/session"
 
 	"github.com/gin-gonic/gin"
 )
