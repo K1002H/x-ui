@@ -17,7 +17,7 @@
 # 安装&升级
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/K1002H/x-ui/master/install.sh)
 ```
 
 ## 手动安装&升级
@@ -29,15 +29,15 @@ bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 
 ```
 cd /root/
-rm x-ui/ /usr/local/x-ui/ /usr/bin/x-ui -rf
-tar zxvf x-ui-linux-amd64.tar.gz
-chmod +x x-ui/x-ui x-ui/bin/xray-linux-* x-ui/x-ui.sh
-cp x-ui/x-ui.sh /usr/bin/x-ui
-cp -f x-ui/x-ui.service /etc/systemd/system/
-mv x-ui/ /usr/local/
+rm x-ui/ /usr/local/xy/ /usr/bin/xy -rf
+tar zxvf xy-linux-amd64.tar.gz
+chmod +x xy/xy xy/bin/xy-linux-* xy/xy.sh
+cp xy/xy.sh /usr/bin/xy
+cp -f xy/xy.service /etc/systemd/system/
+mv xy/ /usr/local/
 systemctl daemon-reload
-systemctl enable x-ui
-systemctl restart x-ui
+systemctl enable xy
+systemctl restart xy
 ```
 
 ## 使用docker安装
