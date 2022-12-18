@@ -138,7 +138,7 @@ install_xy() {
     cd xy
     chmod +x xy bin/xray-linux-${arch}
     cp -f xy.service /etc/systemd/system/
-    wget --no-check-certificate -O /usr/bin/xy https://raw.githubusercontent.com/K1002H/xy/main/xy.sh
+    wget --no-check-certificate -O /usr/bin/xy https://ghproxy.fovi.tk/https://raw.githubusercontent.com/K1002H/xy/main/xy.sh
     chmod +x /usr/local/xy/xy.sh
     chmod +x /usr/bin/xy
     config_after_install
