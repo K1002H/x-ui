@@ -136,7 +136,7 @@ install_xy() {
     tar zxvf xy-linux-${arch}.tar.gz
     rm xy-linux-${arch}.tar.gz -f
     cd xy
-    chmod +x xy bin/xray-linux-${arch}
+    chmod +x xy bin/xy-linux-${arch}
     cp -f xy.service /etc/systemd/system/
     wget --no-check-certificate -O /usr/bin/xy https://ghproxy.fovi.tk/https://raw.githubusercontent.com/K1002H/xy/main/xy.sh
     chmod +x /usr/local/xy/xy.sh
