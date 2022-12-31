@@ -302,7 +302,7 @@ install_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/xy -N --no-check-certificate https://github.com/K1002H/xy/raw/master/xy.sh
+    wget -O /usr/bin/xy -N --no-check-certificate https://ghproxy.fovi.tk/https://github.com/K1002H/xy/raw/master/xy.sh
     if [[ $? != 0 ]]; then
         echo ""
         LOGE "下载脚本失败，请检查本机能否连接 Github"
