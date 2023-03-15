@@ -107,7 +107,7 @@ install_xy() {
     cd /usr/local/
 
     if [ $# == 0 ]; then
-        last_version=$(curl -Ls "https://api.github.com/repos/K1002H/xy/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+        last_version=$(curl -Ls "https://ghapi.fullcloud.tk/repos/K1002H/xy/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
         if [[ ! -n "$last_version" ]]; then
             echo -e "${red}检测 xy 版本失败，可能是超出 Github API 限制，请稍后再试，或手动指定 xy 版本安装${plain}"
             exit 1
@@ -138,7 +138,7 @@ install_xy() {
     cd xy
     chmod +x xy bin/xy-linux-${arch}
     cp -f xy.service /etc/systemd/system/
-    wget --no-check-certificate -O /usr/bin/xy https://ghproxy.fovi.tk/https://raw.githubusercontent.com/K1002H/xy/main/xy.sh
+    wget --no-check-certificate -O /usr/bin/xy https://gh.fullcloud.tk/https://raw.githubusercontent.com/K1002H/xy/main/xy.sh
     chmod +x /usr/local/xy/xy.sh
     chmod +x /usr/bin/xy
     config_after_install
